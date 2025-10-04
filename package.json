@@ -1,0 +1,24 @@
+{
+  "name": "moonveil-discord-server-cloner",
+  "version": "2.0.0",
+  "description": "Moonveil: A refined Discord selfbot tool for cloning entire servers with channels, roles, and emojis.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "selfbot",
+    "server",
+    "clone",
+    "emoji"
+  ],
+  "author": "Gaeuly",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.7.0",
+    "dotenv": "^17.2.2",
+    "debug": "^4.3.4"
+  }
+}
