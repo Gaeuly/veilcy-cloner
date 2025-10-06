@@ -80,6 +80,9 @@ The primary goal of veilcy-cloner is to provide a streamlined and reliable solut
 
 7.  **Usage**:
 
+    ```bash
+    !clone <id server that you want to clone> <target server>
+    ```
     Follow the prompts in the console to use the cloner. You will need to provide the ID of the source server you want to clone and the ID of the target server where you want to clone it.
 
 🤝 How to Contribute
