@@ -1,9 +1,6 @@
 const { downloadImage, delay } = require('./utils/functions');
 const log = require('./utils/logger');
 
-/**
- * Class to handle all Discord server cloning logic.
- */
 class ServerCloner {
     constructor(client) {
         this.client = client;
@@ -17,11 +14,6 @@ class ServerCloner {
         };
     }
 
-    /**
-     * Sends a progress message to the channel and console.
-     * @param {string} message The message to be sent.
-     * @param {import('discord.js-selfbot-v13').TextChannel} progressChannel The channel to send progress to.
-     */
     sendProgress(message, progressChannel) {
         if (progressChannel) {
             progressChannel.send(message).catch(() => {
@@ -103,7 +95,7 @@ class ServerCloner {
         this.sendProgress('👑 Cloning roles...', progressChannel);
         const roles = [...sourceGuild.roles.cache.values()]
             .filter(role => role.name !== '@everyone')
-            .sort((a, b) => a.position - b.position);
+            .sort((a, b) => b.position - a.position);
 
         for (const role of roles) {
             try {
